@@ -12,9 +12,9 @@
 
 6. docker run -d -p 8081:8081 mansigandhi003/pyservice1
 
-7. docker run -d -p 8085:8085 mansigandhi003/pyservices3
+7. docker run -d -p 8085:8085 mansigandhi003/pyservice3
 
-8. docker run -d -p 8086:8086 mansigandhi003/pyservices3
+8. docker run -d -p 8086:8086 mansigandhi003/pyservice3
 
 9. Then go to your terraform scripts to run the aws-eks cluster creation Perform 2 basic commands Terraform init Terraform plan Terraform apply
 
