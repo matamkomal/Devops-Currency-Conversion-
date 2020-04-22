@@ -12,7 +12,7 @@
 
 6. docker run -d -p 8081:8081 mansigandhi003/pyservice1
 
-7. docker run -d -p 8085:8085 mansigandhi003/pyservice3
+7. docker run -d -p 8085:8085 mansigandhi003/pyservice2
 
 8. docker run -d -p 8086:8086 mansigandhi003/pyservice3
 
