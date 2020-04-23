@@ -16,15 +16,25 @@
 10. After the terraform has been successfully executed perform the following steps:
 
     i. terraform output config_map_aws_auth > config_map_aws_auth.yaml &&
+    
     ii. terraform output kubeconfig > ~/.kube/config-terraform-eks-converter &&
+    
     iii. cp ~/.kube/ config-terraform-eks-converter  ~/.kube/config &&
+    
     iv. export KUBECONFIG=~/.kube/config-terraform-eks-converter:~/.kube/config &&
+    
     v. echo "export KUBECONFIG=${KUBECONFIG}" >>${HOME}/.bash_profile &&
+    
     vi. kubectl apply -f config_map_aws_auth.yaml
+    
     vii. terraform output config_map_aws_auth
+    
     viii. terraform output config_map_aws_auth> /tmp/config-map-aws-auth.yml
+    
     vix. kubectl apply -f /tmp/config-map-aws-auth.yml
+    
     vx. kubectl create -f https://raw.githubusercontent.com/dinorows/TCO490/master/kubernetes-dashboard-15.yaml
+    
     vxi. kubectl proxy --port=8080 --disable-filter=true
 
 11. Then run your Kubernetes deployment and service files accordingly
